@@ -1,0 +1,1296 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Emotion Evaluation</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/	nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<link href="C:\Users\Kevin Cao\Desktop\UCSD\Hackathons\LA Hacks\python-docs-samples\appengine\standard_python37\hello_world\templates\bootstrap-4.3.1-dist\css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      alignleft {
+      	float: left;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/app.css') }}">
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+  	<main role="main" class="inner cover">
+    	<h1 style="background-color:rgb(120, 120, 120);" class="cover-heading">Arbitrary Entertainment Facility</h1>
+    </main>
+
+	<header class="text-center">
+		<h3>Evaluations</h3>
+	<div class="alignleft">
+	  <nav class="nav nav-tabs">
+	    <a class="nav-link action" href="#">Home</a>
+	    <a class="nav-link action" href="#">Features</a>
+	    <a class="nav-link action" href="#">Contact</a>
+	  </nav>
+	</div>
+	</header>
+
+<!-- start -->
+
+<html><head><!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for iron-pages -->
+<style scope="iron-pages">iron-pages {display:block}iron-pages > :not(slot):not(.iron-selected) {
+    display:none!important
+  }</style><!-- Shady DOM styles for iron-image --><style scope="iron-image-0">.iron-image-0 {
+    display:inline-block;overflow:hidden;position:relative
+  }
+  
+  .iron-image-0 #sizedImgDiv.iron-image {
+    position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;display:none
+  }
+  
+  .iron-image-0 #img.iron-image {
+    display:block;width:100%;height:auto
+  }
+  
+  .iron-image-0[sizing] #sizedImgDiv.iron-image {
+    display:block
+  }
+  
+  .iron-image-0[sizing] #img.iron-image {
+    display:none
+  }
+  
+  .iron-image-0 #placeholder.iron-image {
+    position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;background-color:inherit;opacity:1;
+  }
+  
+  .iron-image-0 #placeholder.faded-out.iron-image {
+    transition:opacity .5s linear;opacity:0
+  }</style><!-- Shady DOM styles for paper-material --><!-- Shady DOM styles for paper-card --><style scope="paper-card-0">.paper-card-0 {
+    display:block;position:relative
+  }
+  
+  .paper-card-0[elevation="1"] {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                      0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                      0 3px 1px -2px rgba(0, 0, 0, 0.2)
+  }
+  
+  .paper-card-0[elevation="2"] {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                      0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                      0 2px 4px -1px rgba(0, 0, 0, 0.4)
+  }
+  
+  .paper-card-0[elevation="3"] {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                      0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                      0 3px 5px -1px rgba(0, 0, 0, 0.4)
+  }
+  
+  .paper-card-0[elevation="4"] {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                      0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                      0 5px 5px -3px rgba(0, 0, 0, 0.4)
+  }
+  
+  .paper-card-0[elevation="5"] {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                      0  6px 30px 5px rgba(0, 0, 0, 0.12),
+                      0  8px 10px -5px rgba(0, 0, 0, 0.4)
+  }
+  
+  .paper-card-0[animated] {
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  
+  .paper-card-0 {
+    display:inline-block;position:relative;box-sizing:border-box;background-color:#fff;border-radius:2px;font-family: 'Roboto', 'Noto', sans-serif;
+          -webkit-font-smoothing: antialiased;
+  }
+  
+  .paper-card-0 [hidden].paper-card {
+    display:none!important
+  }
+  
+  .paper-card-0 .header.paper-card {
+    position:relative;border-top-left-radius:inherit;border-top-right-radius:inherit;overflow:hidden;
+  }
+  
+  .paper-card-0 .header.paper-card iron-image.paper-card {
+    display:block;width:100%;pointer-events:none;
+  }
+  
+  .paper-card-0 .header.paper-card .title-text.paper-card {
+    padding:16px;font-size:24px;font-weight:400;color:#555;
+  }
+  
+  .paper-card-0 .header.paper-card .title-text.over-image.paper-card {
+    position:absolute;bottom:0;
+  }
+  
+  .paper-card-0  .card-content {
+    padding:16px;position:relative;
+  }
+  
+  .paper-card-0  .card-actions {
+    border-top:1px solid #e8e8e8;padding:5px 16px;position:relative;
+  }</style><!-- Shady DOM styles for paper-ripple --><style scope="paper-ripple">paper-ripple {
+    display:block;position:absolute;border-radius:inherit;overflow:hidden;top:0;left:0;right:0;bottom:0;pointer-events:none
+  }
+  
+  paper-ripple[animating] {
+    -webkit-transform:translate(0,0);transform:translate3d(0,0,0)
+  }
+  
+  #background.paper-ripple,#waves.paper-ripple,.wave-container.paper-ripple,.wave.paper-ripple {
+    pointer-events:none;position:absolute;top:0;left:0;width:100%;height:100%
+  }
+  
+  #background.paper-ripple,.wave.paper-ripple {
+    opacity:0
+  }
+  
+  #waves.paper-ripple,.wave.paper-ripple {
+    overflow:hidden
+  }
+  
+  .wave-container.paper-ripple,.wave.paper-ripple {
+    border-radius:50%
+  }
+  
+  paper-ripple.circle #background.paper-ripple,paper-ripple.circle #waves.paper-ripple {
+    border-radius:50%
+  }
+  
+  paper-ripple.circle .wave-container.paper-ripple {
+    overflow:hidden
+  }</style><!-- Shady DOM styles for paper-button --><!-- Shady DOM styles for paper-tab --><style scope="paper-tab-0">.paper-tab-0 {
+    display: -ms-inline-flexbox;
+          display: -webkit-inline-flex;
+          display: inline-flex;-ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;-ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;-ms-flex: 1 1 auto;
+          -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;position:relative;padding:0 12px;overflow:hidden;cursor:pointer;vertical-align:middle;font-family: 'Roboto', 'Noto', sans-serif;
+          -webkit-font-smoothing: antialiased;
+  }
+  
+  .paper-tab-0:focus {
+    outline:none
+  }
+  
+  .paper-tab-0[link] {
+    padding:0
+  }
+  
+  .paper-tab-0 .tab-content.paper-tab {
+    height:100%;transform:translateZ(0);-webkit-transform:translateZ(0);transition:opacity .1s cubic-bezier(.4,.0,1,1);display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+  
+          -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+          flex-direction: row;-ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;-ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;-ms-flex: 1 1 auto;
+          -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  }
+  
+  .paper-tab-0:not(.iron-selected) > .tab-content.paper-tab {
+    opacity:.8;
+  }
+  
+  .paper-tab-0:focus .tab-content.paper-tab {
+    opacity:1;font-weight:700
+  }
+  
+  .paper-tab-0 paper-ripple.paper-tab {
+    color:#bbb
+  }
+  
+  .paper-tab-0 .tab-content.paper-tab > a {
+    -ms-flex: 1 1 auto;
+          -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;height:100%
+  }</style><!-- Shady DOM styles for iron-meta --><!-- Shady DOM styles for iron-icon --><style scope="iron-icon-0">.iron-icon-0 {
+    display: -ms-inline-flexbox;
+          display: -webkit-inline-flex;
+          display: inline-flex;-ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;-ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;position:relative;vertical-align:middle;fill:currentcolor;stroke:none;width:100%;height:100%;
+  }
+  
+  .iron-icon-0[hidden] {
+    display:none
+  }</style><!-- Shady DOM styles for iron-iconset-svg --><!-- Shady DOM styles for paper-icon-button --><style scope="paper-icon-button-0">.paper-icon-button-0 {
+    display:inline-block;position:relative;padding:8px;outline:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;z-index:0;line-height:1;width:40px;height:40px;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;box-sizing:border-box!important;
+  }
+  
+  .paper-icon-button-0 #ink.paper-icon-button {
+    color:#212121;opacity:.6
+  }
+  
+  .paper-icon-button-0[disabled] {
+    color:#9b9b9b;pointer-events:none;cursor:auto;
+  }</style><!-- Shady DOM styles for paper-tabs --><style scope="paper-tabs-0">.paper-tabs-0 {
+    display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;-ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;height:48px;font-size:14px;font-weight:500;overflow:hidden;-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            margin: 15px 0
+  }
+  
+  [dir="rtl"] .paper-tabs-0, .paper-tabs-0[dir="rtl"] {
+    display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+  
+          -ms-flex-direction: row-reverse;
+          -webkit-flex-direction: row-reverse;
+          flex-direction: row-reverse
+  }
+  
+  .paper-tabs-0 #tabsContainer.paper-tabs {
+    position:relative;height:100%;white-space:nowrap;overflow:hidden;-ms-flex: 1 1 auto;
+          -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  }
+  
+  .paper-tabs-0 #tabsContent.paper-tabs {
+    height:100%;-moz-flex-basis:auto;-ms-flex-basis:auto;flex-basis:auto;
+  }
+  
+  .paper-tabs-0 #tabsContent.scrollable.paper-tabs {
+    position:absolute;white-space:nowrap
+  }
+  
+  .paper-tabs-0 #tabsContent.paper-tabs:not(.scrollable),.paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs {
+    display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+  
+          -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+          flex-direction: row
+  }
+  
+  .paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs {
+    min-width:100%
+  }
+  
+  .paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs > * {
+    -ms-flex:1 0 auto;-webkit-flex:1 0 auto;flex:1 0 auto
+  }
+  
+  .paper-tabs-0 .hidden.paper-tabs {
+    display:none
+  }
+  
+  .paper-tabs-0 .not-visible.paper-tabs {
+    opacity:0;cursor:default
+  }
+  
+  .paper-tabs-0 paper-icon-button.paper-tabs {
+    width:48px;height:48px;padding:12px;margin:0 4px
+  }
+  
+  .paper-tabs-0 #selectionBar.paper-tabs {
+    position:absolute;height:0;bottom:0;left:0;right:0;border-bottom:2px solid #1976d2;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:left center;transform-origin:left center;transition:-webkit-transform;transition:transform;border-bottom-width: 6px;
+            margin-bottom: -1px
+  }
+  
+  .paper-tabs-0 #selectionBar.align-bottom.paper-tabs {
+    top:0;bottom:auto
+  }
+  
+  .paper-tabs-0 #selectionBar.expand.paper-tabs {
+    transition-duration:.15s;transition-timing-function:cubic-bezier(.4,.0,1,1)
+  }
+  
+  .paper-tabs-0 #selectionBar.contract.paper-tabs {
+    transition-duration:.18s;transition-timing-function:cubic-bezier(.0,.0,.2,1)
+  }
+  
+  .paper-tabs-0 #tabsContent.paper-tabs > :not(#selectionBar) {
+    height:100%
+  }</style><!-- Shady DOM styles for fade-in-animation --><!-- Shady DOM styles for fade-out-animation --><!-- Shady DOM styles for paper-tooltip --><!-- Shady DOM styles for iron-jsonp-library --><!-- Shady DOM styles for google-maps-api --><!-- Shady DOM styles for google-map-directions --><!-- Shady DOM styles for google-map-marker --><style scope="google-map-marker">google-map-marker {
+    display:none
+  }</style><!-- Shady DOM styles for iron-selector --><!-- Shady DOM styles for google-map --><style scope="google-map">google-map {
+    position:relative;display:block;height:100%
+  }
+  
+  #map.google-map {
+    position:absolute;top:0;right:0;bottom:0;left:0
+  }</style><!-- Shady DOM styles for google-map-point --><!-- Shady DOM styles for google-map-poly --><!-- Shady DOM styles for google-map-search --><!-- Shady DOM styles for iron-overlay-backdrop --><!-- Shady DOM styles for opaque-animation --><!-- Shady DOM styles for iron-dropdown --><!-- Shady DOM styles for saft-text-item --><!-- Shady DOM styles for saft-text --><!-- Shady DOM styles for entity-box --><!-- Shady DOM styles for saft-entity-view --><!-- Shady DOM styles for vs-captcha --><style scope="vs-captcha">vs-captcha {
+    display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;min-height:100px
+  }
+  
+  #container.vs-captcha {
+    display:inline-block;text-align:left
+  }</style><!-- Shady DOM styles for vs-card --><style scope="vs-card">vs-card {
+    box-sizing:border-box;padding:0;margin:0;
+  }
+  
+  paper-card.vs-card {
+    min-height:400px;padding:18px;width:100%;overflow:auto
+  }
+  
+  [center].vs-card {
+    display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;align-items:center
+  }</style><!-- Shady DOM styles for vs-likeliness --><style scope="vs-likeliness">vs-likeliness *.vs-likeliness {
+    box-sizing:border-box
+  }
+  
+  #label.vs-likeliness,#text.vs-likeliness,#meter.vs-likeliness {
+    min-height:20px;line-height:1.2em;display:inline-block
+  }
+  
+  #label.vs-likeliness {
+    width:26%;font-size:1em;position:relative;top:-2px
+  }
+  
+  #text.vs-likeliness {
+    width:23%;font-size:.75em;position:relative;top:-4px
+  }
+  
+  #meter.vs-likeliness {
+    width:44%
+  }
+  
+  #bar.vs-likeliness {
+    display:inline-block
+  }</style><!-- Shady DOM styles for vs-loading --><style scope="vs-loading">vs-loading {
+    position:absolute!important;top:0;left:0;right:0;bottom:0;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;z-index:99
+  }
+  
+  .wrapper.vs-loading {
+    display:inline-block
+  }
+  
+  .modal.vs-loading {
+    background-color:#eee;opacity:.4;position:absolute;top:0;left:0;right:0;bottom:0
+  }
+  
+  .svg.vs-loading {
+    -webkit-animation:rotator 1.4s linear infinite;animation:rotator 1.4s linear infinite
+  }
+  
+  .circle.vs-loading {
+    stroke-dasharray:187;stroke-dashoffset:0;-webkit-transform-origin:center;transform-origin:center;-webkit-animation:dash 1.4s ease-in-out infinite , colors 5.6s ease-in-out infinite;animation:dash 1.4s ease-in-out infinite , colors 5.6s ease-in-out infinite
+  }
+  
+  @-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  
+  }
+  
+  @keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  
+  }
+  
+  @-webkit-keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+  
+  25% {
+    stroke: #4285F4;
+  }
+  
+  50% {
+    stroke: #4285F4;
+  }
+  
+  75% {
+    stroke: #4285F4;
+  }
+  
+  100% {
+    stroke: #4285F4;
+  }
+  
+  }
+  
+  @keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+  
+  25% {
+    stroke: #4285F4;
+  }
+  
+  50% {
+    stroke: #4285F4;
+  }
+  
+  75% {
+    stroke: #4285F4;
+  }
+  
+  100% {
+    stroke: #4285F4;
+  }
+  
+  }
+  
+  @-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  
+  50% {
+    stroke-dashoffset: 46.75;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  
+  100% {
+    stroke-dashoffset: 187;
+            -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+  
+  }
+  
+  @keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  
+  50% {
+    stroke-dashoffset: 46.75;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  
+  100% {
+    stroke-dashoffset: 187;
+            -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+  
+  }</style><!-- Shady DOM styles for vs-document --><style scope="vs-document">vs-document fieldset.vs-document {
+    border:1px solid #dedede;border-radius:4px
+  }
+  
+  vs-document legend.vs-document {
+    font-size:1.1em;color:#fff;border-radius:11px;display:inline-block;padding:2px 8px;cursor:pointer;user-select:none
+  }
+  
+  vs-document legend.vs-document:hover {
+    opacity:.9
+  }
+  
+  vs-document legend.vs-document>span.vs-document {
+    display:inline-block;text-align:center;width:10px
+  }
+  
+  .container.vs-document {
+    font-size:.95em;padding-bottom:3px;-webkit-transition:max-height .2s;-moz-transition:max-height .2s;-ms-transition:max-height .2s;-o-transition:max-height .2s;transition:max-height .2s;max-height:9999px;position:relative
+  }
+  
+  vs-document fieldset.collapsed.vs-document .container.vs-document {
+    max-height:0;padding:0;overflow:hidden
+  }
+  
+  .page.vs-document,.block.vs-document,.paragraph.vs-document {
+    margin-bottom:10px;padding-right:5px;padding-left:7px
+  }
+  
+  .block.vs-document {
+    background-color:#edf6f9;padding-bottom:2px;margin:8px 0 15px
+  }
+  
+  .paragraph.vs-document {
+    background-color:#e7f7e8
+  }
+  
+  .page.vs-document legend.vs-document {
+    background-color:#af3b23
+  }
+  
+  .block.vs-document>legend.vs-document {
+    background-color:#0288d1
+  }
+  
+  .paragraph.vs-document>legend.vs-document {
+    background-color:#4caf50
+  }
+  
+  .word.vs-document {
+    margin-left:6px;font-size:1em;color:#000;border-bottom:1px dotted #ffaa0a;cursor:default
+  }
+  
+  .word.vs-document:hover {
+    border-bottom-style:solid
+  }
+  
+  .paragraph.vs-document>.word.vs-document:first-child {
+    margin-left:0
+  }
+  
+  .symbol.vs-document {
+    display:inline-block;padding:0
+  }
+  
+  paper-tooltip.vs-document {
+    background-color:#333
+  }</style><!-- Shady DOM styles for vs-faces --><style scope="vs-faces">.face.vs-faces {
+    margin:15px 0 15px;padding-left:20px;font-size:1.1em
+  }
+  
+  .header.vs-faces {
+    font-weight:bold;font-size:.7em;color:#aaa;padding:15px 0 7px
+  }
+  
+  .type-row.vs-faces {
+    margin:8px 0
+  }
+  
+  .confidence.vs-faces {
+    margin:20px 0 15px
+  }
+  
+  .conf-name.vs-faces {
+    width:85%;display:inline-block
+  }
+  
+  .conf-score.vs-faces {
+    width:10%;display:inline-block;text-align:right
+  }
+  
+  .conf-meter.vs-faces {
+    margin-top:4px;background-color:#ccc;height:4px
+  }
+  
+  .conf-bar.vs-faces {
+    height:100%;background-color:#2196f3
+  }
+  
+  .angles.vs-faces {
+    margin-top:15px;text-align:center
+  }
+  
+  .ang-value.vs-faces {
+    margin-right:25px;color:#379214
+  }</style><!-- Shady DOM styles for vs-image --><style scope="vs-image">vs-image {
+    box-sizing:border-box;position:relative;display:inline-block
+  }
+  
+  #image.vs-image {
+    width:100%;height:auto;box-shadow:0 2px 2px 0 rgba(0,0,0,.14) , 0 1px 5px 0 rgba(0,0,0,.12) , 0 3px 1px -2px rgba(0,0,0,.2)
+  }
+  
+  #canvas.vs-image {
+    position:absolute;top:0;left:0;bottom:0;right:0
+  }</style><!-- Shady DOM styles for vs-json --><style scope="vs-json">pre.vs-json {
+    font-family:monospace;color:#555;text-align:left
+  }
+  
+  .string.vs-json {
+    color:#a20000
+  }
+  
+  .number.vs-json {
+    color:#2558ff
+  }
+  
+  .boolean.vs-json {
+    color:#2558ff
+  }
+  
+  .null.vs-json {
+    color:#2558ff
+  }
+  
+  .key.vs-json {
+    color:#007d00
+  }</style><!-- Shady DOM styles for vs-labels --><style scope="vs-labels">.row.vs-labels {
+    padding:8px 0 8px 0
+  }
+  
+  .name.vs-labels {
+    font-size:1.2em;width:85%;display:inline-block
+  }
+  
+  .score.vs-labels {
+    width:10%;display:inline-block;text-align:right
+  }
+  
+  .bar.vs-labels {
+    margin-top:4px;background-color:#ccc;height:4px
+  }
+  
+  .meter.vs-labels {
+    height:100%;background-color:#4caf50
+  }</style><!-- Shady DOM styles for vs-landmarks --><style scope="vs-landmarks">.row.vs-landmarks {
+    margin-bottom:50px
+  }
+  
+  .name.vs-landmarks {
+    font-size:1.2em;width:85%;display:inline-block;padding-bottom:3px
+  }
+  
+  .score.vs-landmarks {
+    font-size:1.1em;width:10%;text-align:left;display:inline-block
+  }
+  
+  .location.vs-landmarks {
+    font-size:.65em;margin:4px 0;text-align:center
+  }
+  
+  google-map.vs-landmarks {
+    height:400px;margin:10px 0 10px 0
+  }</style><!-- Shady DOM styles for vs-logos --><style scope="vs-logos">.row.vs-logos {
+    padding:10px 0 10px 0
+  }
+  
+  .name.vs-logos {
+    width:85%;font-size:1.2em;display:inline-block
+  }
+  
+  .name.vs-logos>a.vs-logos,.name.vs-logos>a.vs-logos:visited,.name.vs-logos>a.vs-logos:hover {
+    text-decoration:none;color:#1565c0
+  }
+  
+  .score.vs-logos {
+    width:10%;display:inline-block;text-align:right
+  }
+  
+  .meter.vs-logos {
+    margin-top:4px;background-color:#ccc;height:4px
+  }
+  
+  .bar.vs-logos {
+    height:100%;background-color:#4caf50
+  }</style><!-- Shady DOM styles for vs-properties --><style scope="vs-properties">vs-properties *.vs-properties {
+    box-sizing:border-box;padding:0;margin:0
+  }
+  
+  .color-wrapper.vs-properties {
+    display:inline-block;padding-bottom:30px
+  }
+  
+  .color-container.vs-properties {
+    height:200px;width:350px
+  }
+  
+  .color.vs-properties {
+    float:left;display:inline-block;height:100%
+  }
+  
+  .color-row.vs-properties {
+    width:365px;margin-top:10px;-webkit-transition:color 300ms linear;-moz-transition:color 300ms linear;transition:color 300ms linear
+  }
+  
+  .color-text.vs-properties {
+    font-size:.9em;width:80%;display:inline-block;padding-bottom:3px
+  }
+  
+  .color-percent.vs-properties {
+    font-size:1.1em;width:18%;text-align:right;display:inline-block
+  }
+  
+  .color-block.vs-properties {
+    margin-top:6px;height:20px;-webkit-transition:background-color 300ms linear;-moz-transition:background-color 300ms linear;transition:background-color 300ms linear
+  }
+  
+  .crop-row.vs-properties {
+    text-align:center;margin:8px 0
+  }
+  
+  .crop-ratio.vs-properties {
+    font-size:1.1em;margin:5px 0 3px
+  }
+  
+  .crop-image.vs-properties {
+    box-shadow:0 2px 2px 0 rgba(0,0,0,.14) , 0 1px 5px 0 rgba(0,0,0,.12) , 0 3px 1px -2px rgba(0,0,0,.2);max-width:85%;height:auto
+  }
+  
+  .heading.vs-properties {
+    color:#333;font-size:1.3em;padding:10px 0 15px
+  }</style><!-- Shady DOM styles for vs-safe --><style scope="vs-safe">paper-card.vs-safe {
+    padding:15px 0 0 35px
+  }
+  
+  .row.vs-safe {
+    margin:30px 0
+  }
+  
+  .help.vs-safe {
+    color:#aaa;font-size:.8em;padding:30px 20px 0 30px
+  }</style><!-- Shady DOM styles for vs-text --><!-- Shady DOM styles for vs-web --><style scope="vs-web">.heading.vs-web {
+    color:#333;font-size:1.3em;padding:10px 0 15px
+  }
+  
+  .row.vs-web {
+    padding:3px 0 3px 0
+  }
+  
+  .name.vs-web {
+    width:80%;font-size:1.1em;display:inline-block
+  }
+  
+  .name.vs-web>a.vs-web,.name.vs-web>a.vs-web:visited,.name.vs-web>a.vs-web:hover {
+    text-decoration:none;color:#1565c0
+  }
+  
+  .score.vs-web {
+    width:17%;font-size:.8em;font-weight:bold;display:inline-block;text-align:left
+  }
+  
+  vs-web hr.vs-web {
+    margin:30px 0 20px;border:1px solid #ddd
+  }
+  
+  .container.vs-web {
+    position:relative
+  }
+  
+  paper-tooltip.vs-web {
+    background-color:#333
+  }</style><!-- Shady DOM styles for vs-app --><style scope="vs-app">vs-app,vs-app *.vs-app {
+    box-sizing:border-box
+  }
+  
+  vs-app {
+    min-width:430px;font-family:Roboto,Arial,serif;position:relative;font-size:.95em;background-color:#f7f7f7;border-color:#f1f1f1;border-radius:2px;padding:20px 10px;color:#666;display:block
+  }
+  
+  #dropzone.vs-app {
+    border:2px dashed #9b9b9b;border-radius:3px;cursor:pointer;min-height:150px;position:relative;transition:background-color ease .5s , border-color ease .5s;-moz-transition:background-color ease .5s , border-color ease .5s;-o-transition:background-color ease .5s , border-color ease .5s;-webkit-transition:background-color ease 5s , border-color ease .5s;width:75%;background:#f7f7f7 right 20px center no-repeat;background-image:url('data:image/png;base64,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')
+  }
+  
+  #dropzone.vs-app:hover,#dropzone.hover.vs-app {
+    background-color:#e4fbfb;border:2px dashed #2cbbff
+  }
+  
+  #title.vs-app {
+    font-size:1.6em;margin-right:35px
+  }
+  
+  .dropzone-text.vs-app {
+    font-size:1.2em;line-height:1.5em;padding-right:150px
+  }
+  
+  .dropzone-text-mobile.vs-app {
+    display:none;padding-top:10px;text-align:center
+  }
+  
+  #captcha.vs-app {
+    cursor:pointer;margin-left:100px;min-height:150px;position:relative;width:250px
+  }
+  
+  #preview.vs-app {
+    display:inline-block;text-align:center
+  }
+  
+  #results.vs-app {
+    margin-left:25px;width:400px;height:400px
+  }
+  
+  #image-name.vs-app {
+    font-size:82%;font-weight:bold;display:block;margin-top:4px;color:#999
+  }
+  
+  #click-to-select-file.vs-app {
+    bottom:0;cursor:pointer;left:0;opacity:0;overflow:hidden;position:absolute;right:0;top:0
+  }
+  
+  #input.vs-app {
+    opacity:0
+  }
+  
+  #exit.vs-app {
+    cursor:pointer;font-size:2.3em;font-weight:bold;line-height:.6em;opacity:.8;position:absolute;right:8px;top:8px;z-index:1
+  }
+  
+  #exit.vs-app::before {
+    content:'\0000D7'
+  }
+  
+  #exit.vs-app:hover {
+    opacity:1
+  }
+  
+  .center-all.vs-app,.center-horizontal.vs-app {
+    display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center
+  }
+  
+  .center-all.vs-app {
+    -webkit-align-items:center;align-items:center
+  }
+  
+  [hidden].vs-app {
+    display:none!important
+  }
+  
+  a.vs-app,a.vs-app:visited,a.vs-app:hover,vs-app   a,vs-app   a:visited,vs-app   a:hover {
+    text-decoration:none;color:#1672b6
+  }
+  
+  @media (max-width:800px) {
+  vs-app,#dropzone.vs-app,#title.vs-app,#preview.vs-app,#results.vs-app,.dropzone-text-mobile.vs-app,.center-all.vs-app,.center-horizontal.vs-app {
+    display:block;margin:10px 5px 30px;width:auto
+  }
+  
+  #dropzone.vs-app {
+    background-position:center center;min-height:250px
+  }
+  
+  .dropzone-text.vs-app {
+    display:none
+  }
+  
+  #results.vs-app {
+    max-height:275px
+  }
+  
+  #captcha.vs-app {
+    margin-left:0;width:auto
+  }
+  
+  }
+  
+  vs-app   paper-tabs paper-icon-button {
+    background-color:#efefef;margin:0!important
+  }
+  
+  vs-app   paper-tab {
+    border:1px solid #eee
+  }
+  
+  vs-app   paper-tab[focused] {
+    font-weight:normal!important
+  }
+  
+  vs-app   paper-tab.iron-selected {
+    font-weight:bold!important
+  }
+  
+  vs-app   .tab-content {
+    font-size:110%;opacity:1!important;border:none!important;background:transparent!important;float:none!important
+  }
+  
+  vs-app   paper-button {
+    width:14%;min-width:100px;font-weight:bold;background-color:#0288d1;color:#fff;cursor:pointer;text-align:center;
+  }</style><style>html, body {padding: 0; margin: 0}</style><link rel="import" href="https://www.gstatic.com/cloud-site-ux/vision.min.html"><style is="custom-style">[hidden]:not([style-scope]):not(.style-scope) {
+    display:none!important
+  }
+  
+  </style><style is="custom-style"></style><style is="custom-style"></style><style is="custom-style"></style><style is="custom-style"></style><style is="custom-style"></style><style>[hidden] { display: none !important; }</style></head><body><div><vs-app>
+  
+  <div class="center-all style-scope vs-app">
+  <div id="title" class="style-scope vs-app">Try the API</div>
+  <div id="dropzone" class="center-all style-scope vs-app">
+  <div class="dropzone-text style-scope vs-app">
+  Drag image file here or<br class="style-scope vs-app">Browse from your computer
+  </div>
+  <div class="dropzone-text-mobile style-scope vs-app">
+  Upload your image
+  </div>
+  <label id="click-to-select-file" for="input" class="style-scope vs-app"></label>
+  <input type="file" id="input" hidden="" class="style-scope vs-app">
+  </div>
+  </div>
+  <paper-tabs id="tabs" autoselect="true" class="style-scope vs-app x-scope paper-tabs-0" role="tablist" tabindex="0" hidden="">
+  
+  <paper-icon-button icon="paper-tabs:chevron-left" tabindex="-1" class="not-visible style-scope paper-tabs x-scope paper-icon-button-0" role="button" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="style-scope iron-icon"></path></g></svg>
+  
+  </iron-icon></paper-icon-button>
+  <div id="tabsContainer" class="style-scope paper-tabs" style="touch-action: pan-y;">
+  <div id="tabsContent" class="scrollable style-scope paper-tabs">
+  <div id="selectionBar" class="style-scope paper-tabs" style="transform: translateX(0%) scaleX(0);"></div>
+  
+  <paper-tab id="landmarkAnnotations" label="landmarks" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Landmarks
+  </div>
+  </paper-tab>
+  <paper-tab id="faceAnnotations" label="faces" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Faces
+  </div>
+  </paper-tab>
+  <paper-tab id="labelAnnotations" label="labels" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Labels
+  </div>
+  </paper-tab>
+  <paper-tab id="logoAnnotations" label="logos" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Logos
+  </div>
+  </paper-tab>
+  <paper-tab id="webDetection" label="web" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Web
+  </div>
+  </paper-tab>
+  <paper-tab id="fullTextAnnotation" label="document" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Document
+  </div>
+  </paper-tab>
+  <paper-tab id="imagePropertiesAnnotation" label="properties" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Properties
+  </div>
+  </paper-tab>
+  <paper-tab id="safeSearchAnnotation" label="safe-search" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  Safe Search
+  </div>
+  </paper-tab>
+  <paper-tab label="json" class="style-scope vs-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+  
+  <div class="tab-content style-scope paper-tab">
+  JSON
+  </div>
+  </paper-tab>
+  
+  </div>
+  </div>
+  <paper-icon-button icon="paper-tabs:chevron-right" tabindex="-1" class="not-visible style-scope paper-tabs x-scope paper-icon-button-0" role="button" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="style-scope iron-icon"></path></g></svg>
+  
+  </iron-icon></paper-icon-button>
+  </paper-tabs>
+  <div id="wrapper" class="center-all style-scope vs-app">
+  <div id="preview" class="style-scope vs-app" hidden="">
+  <vs-image id="image" class="style-scope vs-app">
+  
+  <img id="image" class="style-scope vs-image">
+  <canvas id="canvas" class="style-scope vs-image"></canvas>
+  </vs-image>
+  <div id="image-name" class="style-scope vs-app"> </div>
+  </div>
+  <div id="captcha" class="center-all style-scope vs-app" hidden=""></div>
+  <iron-pages id="results" class="style-scope vs-app" hidden="">
+  
+  
+  <vs-landmarks class="style-scope vs-app">
+  
+  <vs-card class="style-scope vs-landmarks">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <template is="dom-repeat" class="style-scope vs-landmarks"></template>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-landmarks>
+  <vs-faces class="style-scope vs-app">
+  
+  <vs-card class="style-scope vs-faces">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <template is="dom-repeat" class="style-scope vs-faces"></template>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-faces>
+  <vs-labels class="style-scope vs-app">
+  
+  <vs-card class="style-scope vs-labels">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <template is="dom-repeat" class="style-scope vs-labels"></template>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-labels>
+  <vs-logos class="style-scope vs-app">
+  
+  <vs-card class="style-scope vs-logos">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <template is="dom-repeat" class="style-scope vs-logos"></template>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-logos>
+  <vs-web class="style-scope vs-app">
+  
+  <vs-card class="style-scope vs-web">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <div class="container style-scope vs-web">
+  <div class="heading style-scope vs-web">Web Entities</div>
+  <template is="dom-repeat" class="style-scope vs-web"></template>
+  <hr class="style-scope vs-web">
+  <div class="heading style-scope vs-web">Pages with Matched Images</div>
+  <template is="dom-repeat" class="style-scope vs-web"></template>
+  <hr class="style-scope vs-web">
+  <div class="heading style-scope vs-web">Fully Matched Images</div>
+  <template is="dom-repeat" class="style-scope vs-web"></template>
+  <hr class="style-scope vs-web">
+  <div class="heading style-scope vs-web">Partially Matched Images</div>
+  <template is="dom-repeat" class="style-scope vs-web"></template>
+  </div>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-web>
+  <vs-document class="style-scope vs-app">
+  
+  <vs-card id="wrapper" class="style-scope vs-document">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <template is="dom-repeat" class="style-scope vs-document"></template>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-document>
+  <vs-properties class="style-scope vs-app">
+  
+  <vs-card class="style-scope vs-properties">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <div class="heading style-scope vs-properties">Dominant Colors</div>
+  <div class="color-wrapper style-scope vs-properties">
+  <div class="color-container paper-card-0 style-scope vs-properties" elevation="1">
+  <template is="dom-repeat" class="style-scope vs-properties"></template>
+  </div>
+  <div id="row" class="color-row style-scope vs-properties">
+  <div class="color-text style-scope vs-properties">#, &nbsp;RGB()</div>
+  <div class="color-percent style-scope vs-properties">%</div>
+  <div class="color-block style-scope vs-properties" style="">&nbsp;</div>
+  </div>
+  </div>
+  <div class="heading style-scope vs-properties">Crop Hints</div>
+  <template is="dom-repeat" class="style-scope vs-properties"></template>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-properties>
+  <vs-safe class="style-scope vs-app">
+  
+  <vs-card class="style-scope vs-safe">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <template is="dom-repeat" class="style-scope vs-safe"></template>
+  <div class="help style-scope vs-safe">Likeliness values are Unknown, Very Unlikely, Unlikely, Possible, Likely, and Very Likely</div>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-safe>
+  <vs-json id="json" class="style-scope vs-app">
+  
+  <vs-card id="wrapper" class="style-scope vs-json">
+  
+  <paper-card id="card" class="style-scope vs-card x-scope paper-card-0" aria-label="" elevation="1">
+  
+  <div class="header style-scope paper-card">
+  <iron-image class="style-scope paper-card x-scope iron-image-0" hidden="" aria-hidden="true">
+  
+  <div id="sizedImgDiv" role="img" class="style-scope iron-image" aria-label="" hidden=""></div>
+  <img id="img" class="style-scope iron-image">
+  <div id="placeholder" class="style-scope iron-image" hidden=""></div>
+  </iron-image>
+  <div class="title-text  style-scope paper-card" hidden=""></div>
+  </div>
+  
+  
+  <pre id="display" class="style-scope vs-json"></pre>
+  
+  
+  </paper-card>
+  </vs-card>
+  </vs-json>
+  
+  </iron-pages>
+  </div>
+  <div id="exit" class="style-scope vs-app" hidden=""></div>
+  <vs-loading id="loading" class="style-scope vs-app" hidden="">
+  
+  <div class="modal style-scope vs-loading"></div>
+  <div class="wrapper style-scope vs-loading">
+  <svg class="svg style-scope vs-loading" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+  <circle class="circle style-scope vs-loading" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+  </svg>
+  </div>
+  </vs-loading>
+  </vs-app></div></body></html>
+
+<!-- end -->
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

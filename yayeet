@@ -1,0 +1,104 @@
+import argparse
+import io
+import re
+import os
+import glob
+
+
+def detect_faces(path):
+    from google.cloud import vision
+    client = vision.ImageAnnotatorClient()
+
+    with io.open(path, 'rb') as image_file:
+        content = image_file.read()
+
+    image = vision.types.Image(content=content)
+
+    response = client.face_detection(image=image)
+    faces = response.face_annotations
+
+    likelihood_name = ('UNKNOWN', 'VERY_UNLIKELY', 'UNLIKELY', 'POSSIBLE',
+                       'LIKELY', 'VERY_LIKELY')
+
+    emotionScore = 0
+    overAllScore = 0
+
+    for face in faces:
+        if likelihood_name[face.anger_likelihood] == 'UNKNOWN':
+            emotionScore += 0
+        elif likelihood_name[face.anger_likelihood] == 'VERY_UNLIKELY':
+            emotionScore += 4
+        elif likelihood_name[face.anger_likelihood] == 'UNLIKELY':
+            emotionScore += 2
+        elif likelihood_name[face.anger_likelihood] == 'POSSIBLE':
+            emotionScore += 0
+        elif likelihood_name[face.anger_likelihood] == 'LIKELY':
+            emotionScore += -2
+        elif likelihood_name[face.anger_likelihood] == 'VERY LIKELY':
+            emotionScore += -4
+
+        if likelihood_name[face.joy_likelihood] == 'UNKNOWN':
+            emotionScore += 0
+        elif likelihood_name[face.joy_likelihood] == 'VERY_UNLIKELY':
+            emotionScore += -4
+        elif likelihood_name[face.joy_likelihood] == 'UNLIKELY':
+            emotionScore += -2
+        elif likelihood_name[face.joy_likelihood] == 'POSSIBLE':
+            emotionScore += 0
+        elif likelihood_name[face.joy_likelihood] == 'LIKELY':
+            emotionScore += 2
+        elif likelihood_name[face.joy_likelihood] == 'VERY LIKELY':
+            emotionScore += 4
+
+        if likelihood_name[face.surprise_likelihood] == 'UNKNOWN':
+            emotionScore += 0
+        elif likelihood_name[face.surprise_likelihood] == 'VERY_UNLIKELY':
+            emotionScore += -2
+        elif likelihood_name[face.surprise_likelihood] == 'UNLIKELY':
+            emotionScore += -1
+        elif likelihood_name[face.surprise_likelihood] == 'POSSIBLE':
+            emotionScore += 0
+        elif likelihood_name[face.surprise_likelihood] == 'LIKELY':
+            emotionScore += 1
+        elif likelihood_name[face.surprise_likelihood] == 'VERY LIKELY':
+            emotionScore += 2
+
+    if emotionScore == 0:
+        overAllScore += 1
+    elif emotionScore < 0 and emotionScore > -8:
+        overAllScore += -3
+    elif emotionScore < -8:
+        overAllScore += -4
+    elif emotionScore > 0 and emotionScore < 8:
+        overAllScore += 2
+    elif emotionScore > 8:
+        overAllScore += 3
+
+    if overAllScore == 2:
+        return "FAIR"
+    elif overAllScore < 2:
+        return "BAD"
+    else: 
+
+    return "GOOD"
+
+def main(input_folder, max_results):
+    with open(input_folder, 'rb') as images:
+        print(images)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='Detects faces in the given folder')
+
+    parser.add_argument(
+        'input_folder',
+        help='the folder for images'
+    )
+
+    parser.add_argument(
+        '--max-results', dest='max_results', default=4,
+        help='the max results of face detection')
+
+    args = parser.parse_args()
+
+    main(args.input_folder, args.max_results)
